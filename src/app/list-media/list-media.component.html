@@ -1,3 +1,20 @@
+<!--
+<input [(ngModel)] = "stopName">
+<button> class="btn btn-primary" (click)="getStopName" </button>
+-->
+
+
+<div *ngFor="let stop of stopArray">
+    <ul>
+      <li *ngFor="let route of stop.patterns">
+        {{route.name}}
+      </li>
+
+    </ul>
+</div>
+
+
+
 <p>
   {{printThis}}
 </p>
